@@ -31,6 +31,9 @@ class NewUser extends DataBaseOperetor
                 $_SESSION['user_details'] = $this->select('usersdetails', '*', "user_name = '{$_POST['user_name']}'");
                 header("Location:./index.php?page=controlpanel.php");
                 die();
+            } else {
+                header("Location:./index.php?page=register.php&error=something%20went%20wrong");
+                die();
             }
 
         } else {
