@@ -30,14 +30,18 @@ body {
   opacity: 1;
 }
 
-#logInModal,
-#profileCpanel {
-  .form-group {
-    margin-bottom: 0;
-  }
-}
 #profile_cpanel_img {
   margin-left: calc(50% - 64px);
   margin-top: calc(50% - 64px);
 }
+
+@media (min-width: 768px) {
+  #logInModal,
+  #profileCpanel {
+    .form-group {
+      margin-bottom: 0;
+    }
+  }
+}
+
 /*# sourceMappingURL=mystyle.css.map */
