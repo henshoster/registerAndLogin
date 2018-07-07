@@ -61,5 +61,5 @@ if (isset($_POST['edit_button'])) {
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab"><?=$user->printProfile()?></div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Hello ZAZA!</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Hello ZAZA!Coming soon....</div>
 </div>
