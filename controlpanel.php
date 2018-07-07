@@ -10,9 +10,9 @@ class User extends DataBaseOperetor
     protected $php_self;
     protected $get_self;
 
-    public function __construct($user_details, $host = "localhost", $username = "root", $password = "", $databasename = "users")
+    public function __construct($user_details)
     {
-        parent::__construct($host, $username, $password, $databasename);
+        parent::__construct();
         $this->user_details = $user_details[0];
         $this->php_self = htmlentities($_SERVER['PHP_SELF']);
         if (!empty($_GET['page'])) {

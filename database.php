@@ -3,7 +3,7 @@ abstract class DataBaseOperetor
 {
     protected $db;
 
-    public function __construct($host, $username, $password, $databasename)
+    public function __construct($host = "den1.mysql6.gear.host", $username = "users4", $password = "Qg77M2H~8l_3", $databasename = "users4")
     {
         $this->db = new mysqli($host, $username, $password, $databasename);
         if ($this->db->connect_error) {

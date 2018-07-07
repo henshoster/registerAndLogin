@@ -11,9 +11,9 @@ class NewUser extends DataBaseOperetor
 {
     protected $field_names;
 
-    public function __construct($host = "localhost", $username = "root", $password = "", $databasename = "users")
+    public function __construct()
     {
-        parent::__construct($host, $username, $password, $databasename);
+        parent::__construct();
         $this->field_names = $this->describeTable('userdetails');
         $this->createNewUser();
     }

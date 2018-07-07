@@ -17,9 +17,9 @@ class LogIn extends DataBaseOperetor
     protected $password_login;
     protected $last_page;
 
-    public function __construct($user_name_login, $password_login, $last_page, $host = "localhost", $username = "root", $password = "", $databasename = "users")
+    public function __construct($user_name_login, $password_login, $last_page)
     {
-        parent::__construct($host, $username, $password, $databasename);
+        parent::__construct();
         $this->user_name_login = $user_name_login;
         $this->password_login = $password_login;
         $this->last_page = $last_page;
