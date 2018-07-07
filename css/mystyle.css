@@ -1,0 +1,43 @@
+body {
+  padding-top: 80px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  padding: 7px 0 0 13px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  opacity: 0.5;
+}
+
+.form-control:focus + .form-control-placeholder {
+  font-size: 75%;
+  -webkit-transform: translate3d(0, -110%, 0);
+  transform: translate3d(0, -110%, 0);
+  opacity: 1;
+}
+
+.customclass {
+  font-size: 75%;
+  -webkit-transform: translate3d(0, -110%, 0);
+  transform: translate3d(0, -110%, 0);
+  opacity: 1;
+}
+
+#logInModal .form-group,
+#profileCpanel .form-group {
+  margin-bottom: 0;
+}
+
+#profile_cpanel_img {
+  margin-left: calc(50% - 64px);
+  margin-top: calc(50% - 64px);
+}
+/*# sourceMappingURL=mystyle.css.map */
